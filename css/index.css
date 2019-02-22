@@ -225,7 +225,7 @@ p {
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 15px 0;
+  padding-top: 13px;
   background: #F6F6F6;
   border-bottom: 3px solid #F1F1F1;
 }
@@ -240,7 +240,7 @@ p {
   }
 }
 .nav-grouping .nav-link {
-  padding: 15px;
+  padding: 19px 16px 8px;
   color: #454A59;
   font-size: 1.6rem;
   text-decoration: none;
