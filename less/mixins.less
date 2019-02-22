@@ -1,10 +1,22 @@
 // Mixins Here
 
+.phone-full-width() {
+    @media @phone {
+        width: 100%;
+    }
+}
+
+.flex(@direction: row, @wrap: no-wrap, @jc: center, @ai: center) {
+    display: flex;
+    flex-wrap: @wrap;
+    justify-content: @jc;
+    align-items: @ai;
+}
 
 .buttonz(@width: 30%, @font-size: 1.7rem, @padding: 5px) {
     width: @width;
     padding: @padding;
-    border: 5px solid @btn-bg-color;
+    border: 2px solid @btn-bg-color;
     border-radius: 5px;
 
     font-size: @font-size;
@@ -12,10 +24,9 @@
 
     color: @wild-sand;
     background: @btn-bg-color;
-}
 
-.phone-full-width() {
-    @media @phone {
-        width: 100%;
+    &:hover {
+        background: @wild-sand;
+        color: @btn-bg-color;
     }
 }
