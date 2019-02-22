@@ -18,6 +18,40 @@
     transform: translate(-8px, -900px);
   }
 }
+@keyframes rocketLaunch {
+  0% {
+    transform: translate(8px, -20px);
+  }
+  20% {
+    transform: translate(-8px, -100px);
+  }
+  40% {
+    transform: translate(8px, -200px);
+  }
+  60% {
+    transform: translate(-8px, -500px);
+  }
+  80% {
+    transform: translate(8px, -700px);
+  }
+  100% {
+    transform: translate(-8px, -900px);
+  }
+}
+@keyframes spaceWalk {
+  25% {
+    transform: translate(5px, -5px);
+  }
+  50% {
+    transform: translate(-5px, 5px);
+  }
+  75% {
+    transform: translate(5px, -5px);
+  }
+  100% {
+    transform: translate(5px, 5px);
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -355,4 +389,5 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+  animation: spaceWalk 0.5s infinite;
 }
