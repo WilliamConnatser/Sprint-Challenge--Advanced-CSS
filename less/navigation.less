@@ -1,1 +1,41 @@
 // Navigation code here
+
+.nav-grouping {
+    
+    .flex(@wrap: wrap);
+
+    width: 100%;
+    padding-top: 13px;
+    
+    background: @nav-bg;
+    border-bottom: 3px solid @nav-border;
+
+    .nav-title {
+        width: 100%;
+        text-align: center;
+
+        font-size: 4rem;
+    }
+
+    .nav-link {
+        padding: 19px 16px 8px;
+
+        color: @nav-font;
+        font-size: 1.6rem;
+        text-decoration: none;
+
+        @media @phone {
+            padding: 15px 16px 12px;
+        }
+    }
+}
+
+.sticky-nav {
+    position: fixed;
+    top: 0;
+}
+
+.dummy-div {
+    display: none;
+    margin-top: 50px;
+}
