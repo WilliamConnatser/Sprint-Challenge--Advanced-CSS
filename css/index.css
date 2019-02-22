@@ -1,3 +1,23 @@
+@keyframes rocketLaunch {
+  0% {
+    transform: translate(8px, -20px);
+  }
+  20% {
+    transform: translate(-8px, -100px);
+  }
+  40% {
+    transform: translate(8px, -200px);
+  }
+  60% {
+    transform: translate(-8px, -500px);
+  }
+  80% {
+    transform: translate(8px, -700px);
+  }
+  100% {
+    transform: translate(-8px, -900px);
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -197,6 +217,14 @@ p {
     padding: 15px 10px 0;
   }
 }
+.sticky-nav {
+  position: fixed;
+  top: 0;
+}
+.dummy-div {
+  display: none;
+  margin-top: 50px;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -234,6 +262,10 @@ footer {
   .home .space-images img {
     width: 100%;
   }
+}
+.home .space-images .blast,
+.home .space-images .launch {
+  animation: rocketLaunch 1s;
 }
 @media (max-width: 500px) {
   .home .space-images .sky,
