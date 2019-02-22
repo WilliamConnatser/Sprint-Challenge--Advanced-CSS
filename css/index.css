@@ -234,11 +234,6 @@ p {
   text-align: center;
   font-size: 4rem;
 }
-@media (max-width: 500px) {
-  .nav-grouping .nav-title {
-    font-size: 3rem;
-  }
-}
 .nav-grouping .nav-link {
   padding: 19px 16px 8px;
   color: #454A59;
@@ -247,8 +242,7 @@ p {
 }
 @media (max-width: 500px) {
   .nav-grouping .nav-link {
-    font-size: 1.4rem;
-    padding: 15px 10px 0;
+    padding: 15px 16px 12px;
   }
 }
 .sticky-nav {
